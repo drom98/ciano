@@ -372,7 +372,7 @@ namespace Ciano.Controllers {
                         // there is no return on image conversion, if display is pq was generated some error.
                         if (item.type_item != TypeItemEnum.IMAGE || this.name_format_selected.down () == "gif") {
                             process_line (str_return, row, ref total, error);
-
+                            message(str_return);
                             if (error > 0) {
                                 if (this.settings.error_notify) {
                                     send_notification (item.name, Properties.TEXT_ERROR_IN_CONVERSION);    
@@ -575,6 +575,12 @@ namespace Ciano.Controllers {
                 array.add (new_file);
             }
 
+            string output = "";
+            array.foreach ((str) => {
+                output += str + " ";
+            });
+
+            message(output);
             return array.data;
         }
 
