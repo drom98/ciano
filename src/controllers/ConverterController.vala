@@ -550,8 +550,8 @@ namespace Ciano.Controllers {
 
                 array.add ("-strict");
                 array.add ("-2");
-                array.add ("-f");
-                array.add (this.name_format_selected.down ());
+                array.add ("-c:a");
+                array.add ("libvorbis");
                 array.add (new_file);
             } else if (this.type_item == TypeItemEnum.IMAGE) {
                 if (this.name_format_selected.down () == "gif") {
