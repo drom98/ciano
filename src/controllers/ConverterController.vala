@@ -550,6 +550,8 @@ namespace Ciano.Controllers {
 
                 array.add ("-strict");
                 array.add ("-2");
+                array.add ("-vcodec");
+                array.add ("libx264");
                 array.add ("-f");
                 array.add (this.name_format_selected.down ());
                 array.add (new_file);
