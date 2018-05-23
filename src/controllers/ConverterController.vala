@@ -548,10 +548,10 @@ namespace Ciano.Controllers {
                     array.add ("44100");
                 }
 
-                array.add ("-strict");
+                /*array.add ("-strict");
                 array.add ("-2");
                 array.add ("-c:v");
-                array.add ("copy");
+                array.add ("copy");*/
                 array.add (new_file);
             } else if (this.type_item == TypeItemEnum.IMAGE) {
                 if (this.name_format_selected.down () == "gif") {
